@@ -37,7 +37,7 @@
 </head>
 
 <body class="flex flex-col h-full overflow-x-hidden">
-    <header class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-20 py-4 bg-white shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.19)]">
+    <header class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-5 sm:px-20 py-4 bg-white shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.19)]">
         <!-- Logo -->
         <div class="flex items-center text-xl">
             <span class="text-primary">.GREEN</span>
@@ -99,20 +99,25 @@
             <a href="#" class="text-third hover:text-primary transition">FAQ</a>
         </nav>
         <div class="flex space-x-2 pt-6">
-            <button
+            <a href="login.html">
+                <button
                 class="border-2 border-primary bg-primary text-white px-6 py-2 rounded hover:bg-primary-hover cursor-pointer transition">Login</button>
-            <button
+            </a>
+            
+            <a href="register.html">
+                <button
                 class="border border-primary bg-white text-primary px-4 py-2 rounded hover:bg-secondary-hover cursor-pointer transition">Register</button>
+            </a>
         </div>
     </div>
 
     <!-- Hero section -->
-    <div class="bg-center bg-cover h-screen pt-10 flex flex-col justify-center items-center text-center space-y-2 md:h-165 md:pt-20" style="background-image: url(img/bg.png);">
+    <div class="bg-center bg-cover h-150 pt-10 flex flex-col justify-center items-center text-center space-y-2 md:h-165 md:pt-20" style="background-image: url(img/bg.png);">
         <div class="w-80 p-4 mb-1 md:w-120">
             <p class="font-jakarta text-4xl mb-2">Your Waste Pickup Services</p>
             <span class="text-primary text-5xl">.GREEN</span><span class="text-third text-5xl">wise</span></p>
         </div>
-        <div class="font-jakarta w-60  md:w-190">
+        <div class="font-jakarta w-75 md:w-190">
             <p>Lorem ipsum dolor sit amet consectetur. Sit tincidunt neque diam enim etiam sapien sapien elementum
                 lobortis. Purus diam adipiscing mattis malesuada pellentesque eget non. Tortor ultrices turpis diam
                 pellentesque pharetra tristique. Odio non lorem cursus ultricies.</p>
@@ -124,7 +129,7 @@
     </div>
 
     <!-- Hijau-Hijau -->
-    <div class="bg-primary h-120 md:h-100 grid grid-cols-1 md:grid-cols-2 ">
+    <div class="bg-primary h-130 md:h-100 grid grid-cols-1 md:grid-cols-2 ">
         <!-- Kolom 1 -->
         <div class="m-5 md:ml-40 flex flex-col justify-center text-secondary">
             <div class="bg-primary text-white px-4 py-2 rounded-full border w-50 mb-5 hover:bg-primary-hover md:mb-5">About</div>
@@ -132,7 +137,7 @@
         </div>
         <!-- Kolom 2 -->
         <div class="m-5 md:ml-40 flex flex-col justify-center text-secondary">
-            <p class="w-90">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eaque voluptas, sapiente non assumenda perspiciatis excepturi, iste maxime consequatur reprehenderit minima est odio numquam, corrupti praesentium quam veritatis. Voluptatem, tempora!</p>
+            <p class="w-82">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eaque voluptas, sapiente non assumenda perspiciatis excepturi, iste maxime consequatur reprehenderit minima est odio numquam, corrupti praesentium quam veritatis. Voluptatem, tempora!</p>
         </div>
     </div>
 
@@ -194,13 +199,13 @@
     <!-- AKHIR FITUR -->
 
     <!-- MANFAAT SECTION -->
-    <div class="judul flex flex-col mt-8 items-center m-auto ">
-        <div class="w-auto sm:w-120 bg-secondary text-primary px-4 py-2 rounded-full border  mb-5 hover:bg-secondary-hover md:mb-2">Manfaat</div>
+    <div class="judul flex flex-col mt-8 items-center m-auto w-90 sm:w-auto">
+        <div class="w-auto bg-secondary text-primary px-4 py-2 rounded-full border  mb-5 hover:bg-secondary-hover md:mb-2">Manfaat</div>
             <h1 class="text-green-700 text-center text-4xl font-semibold">Terus Apasih Manfaat dari GREENwise?</h1>
             <p class="text-gray-500 mt-3 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, quisquam.</p>
     </div>
 
-    <div class="max-w-6xl w-full m-auto my-10">
+    <div class="max-w-6xl w-full m-auto my-10 px-4 sm:px-6 lg:px-0">
 
         <!-- Grid Section -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
@@ -259,6 +264,53 @@
     </div>    
 
     <!-- AKHIR MANFAAT -->
+    <div class="bg-primary sm:py-10 py-3 sm:px-50 px-3 flex sm:flex-row flex-col gap-4 justify-between">
+        
+            <div class="judul flex flex-col mt-8 items-start  w-80 sm:w-auto">
+                <div class="w-auto bg-secondary text-primary px-4 py-2 rounded-full border  mb-5 hover:bg-secondary-hover md:mb-2">FAQ</div>
+                    <h1 class="text-secondary text-4xl font-semibold">Frequently Asked Question</h1>
+                    <p class="text-secondary mt-3 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis eius delectus cupiditate.</p>
+            </div>        
+        
+        
+            <div class="max-w-lg w-84 bg-white shadow-md rounded-lg p-4">
+                <h2 class="text-xl font-semibold mb-4 text-gray-700">Accordion Example</h2>
+        
+                <!-- Accordion Item 1 -->
+                <div class="border-b">
+                    <button class="accordion-header flex justify-between w-full p-4 text-left text-green-700 font-medium">
+                        <span>What is Tailwind CSS?</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content hidden p-4 text-gray-600">
+                        Tailwind CSS is a utility-first CSS framework that allows developers to build modern websites quickly.
+                    </div>
+                </div>
+        
+                <!-- Accordion Item 2 -->
+                <div class="border-b">
+                    <button class="accordion-header flex justify-between w-full p-4 text-left text-green-700 font-medium">
+                        <span>Why use Tailwind?</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content hidden p-4 text-gray-600">
+                        Tailwind is highly customizable and makes styling components faster with pre-built utility classes.
+                    </div>
+                </div>
+        
+                <!-- Accordion Item 3 -->
+                <div class="border-b">
+                    <button class="accordion-header flex justify-between w-full p-4 text-left text-green-700 font-medium">
+                        <span>Is Tailwind better than Bootstrap?</span>
+                        <span class="accordion-icon">+</span>
+                    </button>
+                    <div class="accordion-content hidden p-4 text-gray-600">
+                        Tailwind is more flexible than Bootstrap, allowing developers to customize styles without overriding pre-built classes.
+                    </div>
+                </div>
+            </div>
+        
+    </div>
 
     <script src="script.js">
         console.log(tailwind.config);

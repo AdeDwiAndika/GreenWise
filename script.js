@@ -35,3 +35,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.querySelectorAll(".accordion-header").forEach((button) => {
+  button.addEventListener("click", function () {
+    const content = this.nextElementSibling;
+    const icon = this.querySelector(".accordion-icon");
+
+    if (content.classList.contains("hidden")) {
+      document
+        .querySelectorAll(".accordion-content")
+        .forEach((item) => item.classList.add("hidden"));
+      document
+        .querySelectorAll(".accordion-icon")
+        .forEach((icon) => (icon.textContent = "+"));
+
+      content.classList.remove("hidden");
+      icon.textContent = "-";
+    } else {
+      content.classList.add("hidden");
+      icon.textContent = "+";
+    }
+  });
+});
