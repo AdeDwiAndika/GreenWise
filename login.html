@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #3a9f1d;
+        --color-primary-hover: #2e7a14;
+        --color-secondary: #ffffff;
+        --color-third: #000000;
+        --color-priback: #f0f8ed;
+        --color-stroke: #b8dcad;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontfamily: {
+              jakarta: ["Plus Jakarta Sans", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Login | GreenWise</title>
+  </head>
+  <body>
+    <!-- LOGIN PAGE -->
+    <div class="flex justify-between h-screen w-screen">
+      <div class="image flex-1 hidden md:block">
+        <img
+          src="img/ecological-bag-desk.jpg"
+          class="h-full w-full object-cover"
+          alt=""
+        />
+      </div>
+      <div class="flex flex-1 items-center justify-center px-10 sm:px-20">
+        <div class="w-full max-w-md">
+          <div class="flex items-center text-xl">
+            <h1 class="mt-10 mb-1 text-3xl font-semibold">Sign in</h1>
+            <span class="text-primary">.GREEN</span>
+            <span class="text-third">wise</span>
+          </div>
+          <p class="mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+            voluptates cumque ullam.
+          </p>
+          <form
+            action=""
+            method="post"
+            class="flex gap-3 flex-col justify-center"
+          >
+            <p>Email</p>
+            <input
+              class="p-4 border border-stroke bg-priback rounded-[10px] w-full"
+              type="email"
+              placeholder="Masukan email"
+            />
+            <div class="relative w-full">
+              <p>Confirm Password</p>
+              <input
+                class="p-4 border border-stroke bg-priback rounded-[10px] w-full"
+                type="password"
+                placeholder="Konfirmasi password"
+                id="confirmPassword"
+              />
+              <button
+                type="button"
+                class="absolute top-1/2 right-6 transform text-gray-500 togglePassword"
+                data-target="confirmPassword"
+              >
+                <i class="fa fa-eye"></i>
+              </button>
+            </div>
+            <div class="chekbox flex gap-3">
+              <input type="checkbox" name="" />
+              <p>
+                I agree to the
+                <a href="" class="underline decoration-sky-500/30 text-sky-500"
+                  >Term and Condition</a
+                >
+              </p>
+            </div>
+
+            <a
+              class="my-5 p-3 bg-primary text-secondary rounded-[10px] w-full text-center"
+              href="https://dribbble.com/"
+              >Login</a
+            >
+
+            <!-- <input
+              class="my-5 p-3 bg-primary text-secondary rounded-[10px] w-full"
+              type="submit"
+            /> -->
+          </form>
+        </div>
+      </div>
+      <!-- <div class="form flex-1 px-10 py-10 sm:px-20 sm:py-20">
+        <h1 class="my-10 text-3xl">Haloo Selamat Datang Kembali👋</h1>
+        <form
+          action=""
+          method="post"
+          class="flex gap-3 flex-col justify-center w-full max-w-[500px]"
+        >
+          <p>Email</p>
+          <input
+            class="p-4 border border-stroke bg-priback rounded-[10px]"
+            type="email"
+            placeholder="Masukan email"
+          />
+          <p>Password</p>
+          <input
+            class="p-4 border border-stroke bg-priback rounded-[10px]"
+            type="password"
+            placeholder="Masukan password"
+          />
+          <input
+            class="my-5 p-3 bg-primary text-secondary rounded-[10px]"
+            type="submit"
+            value="Login"
+          />
+        </form>
+      </div> -->
+    </div>
+  </body>
+  <script>
+    document.querySelectorAll(".togglePassword").forEach((button) => {
+      button.addEventListener("click", function () {
+        const targetId = this.getAttribute("data-target");
+        const passwordInput = document.getElementById(targetId);
+
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          this.innerHTML = '<i class="fa fa-eye-slash"></i>';
+        } else {
+          passwordInput.type = "password";
+          this.innerHTML = '<i class="fa fa-eye"></i>';
+        }
+      });
+    });
+  </script>
+  <script>
+    console.log(tailwind.config);
+  </script>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREENwise | Landing Page</title>
+    <link rel="icon" href="img/Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <style type="text/tailwindcss">
+        @theme {
+          --color-primary: #3A9F1D;
+          --color-primary-hover: #2E7A14;
+          --color-secondary: #ffffff;
+          --color-secondary-hover: #f7f7f7;
+          --color-third: #000000;
+          --color-stroke-primary: #B8DCAD;
+          --color-bg-primary: #F0F8ED;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        jakarta: ["Plus Jakarta Sans", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="flex flex-col h-full overflow-x-hidden">
+    <header class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-20 py-4 bg-white shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.19)]">
+        <!-- Logo -->
+        <div class="flex items-center text-xl">
+            <span class="text-primary">.GREEN</span>
+            <span class="text-third">wise</span>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="hidden md:flex space-x-5 absolute left-1/2 -translate-x-1/2">
+            <a href="#" class="text-third hover:text-primary transition">Beranda</a>
+            <a href="#" class="text-third hover:text-primary transition">Tentang kami</a>
+            <a href="#" class="text-third hover:text-primary transition">Fitur</a>
+            <a href="#" class="text-third hover:text-primary transition">Manfaat</a>
+            <a href="#" class="text-third hover:text-primary transition">FAQ</a>
+        </nav>
+
+        <!-- Navbar Menu Mobile-->
+        <button class="md:hidden text-third" id="menuToggle" title="Toggle Menu">
+            <i class="fas fa-bars text-xl"></i>
+        </button>
+
+        <!-- Addition -->
+        <div class="hidden md:flex items-center space-x-5">
+            <div class="space-x-1">
+                <button class="text-primary p-x-2 hover:text-primary-hover transition" title="Search">
+                    <i class="fas fa-search text-xl"></i>
+                </button>
+                <button class="text-primary hover:text-primary-hover transition" title="Shopping Cart">
+                    <i class="fas fa-shopping-cart text-xl"></i>
+                </button>
+            </div>
+            <div class="space-x-1">
+                <a href="login.html">
+                    <button
+                    class="border-2 border-primary bg-primary text-white px-6 py-2 rounded-[7px] hover:bg-primary-hover cursor-pointer transition">Sign
+                    In</button>
+                </a>
+                <a href="register.html">
+                    <button
+                    class="border border-primary bg-white text-primary px-4 py-2 rounded-[7px] hover:bg-secondary-hover cursor-pointer transition">Sign
+                    Up</button>
+                </a>
+                
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar Mobile -->
+    <div class="hidden md:hidden bg-white w-full py-4 px-6 shadow-md absolute z-10 left-0 right-0" id="mobileMenu">
+        <div class="flex items-center text-xl justify-center">
+            <span class="text-primary">.Bank</span>
+            <span class="text-third">Sampah</span>
+        </div>
+        <nav class="flex flex-col space-y-4 pt-6">
+            <a href="#" class="text-third hover:text-primary transition">Beranda</a>
+            <a href="#" class="text-third hover:text-primary transition">Tentang Kami</a>
+            <a href="#" class="text-third hover:text-primary transition">Fitur</a>
+            <a href="#" class="text-third hover:text-primary transition">Manfaat</a>
+            <a href="#" class="text-third hover:text-primary transition">FAQ</a>
+        </nav>
+        <div class="flex space-x-2 pt-6">
+            <button
+                class="border-2 border-primary bg-primary text-white px-6 py-2 rounded hover:bg-primary-hover cursor-pointer transition">Login</button>
+            <button
+                class="border border-primary bg-white text-primary px-4 py-2 rounded hover:bg-secondary-hover cursor-pointer transition">Register</button>
+        </div>
+    </div>
+
+    <!-- Hero section -->
+    <div class="bg-center bg-cover h-screen pt-10 flex flex-col justify-center items-center text-center space-y-2 md:h-165 md:pt-20" style="background-image: url(img/bg.png);">
+        <div class="w-80 p-4 mb-1 md:w-120">
+            <p class="font-jakarta text-4xl mb-2">Your Waste Pickup Services</p>
+            <span class="text-primary text-5xl">.GREEN</span><span class="text-third text-5xl">wise</span></p>
+        </div>
+        <div class="font-jakarta w-60  md:w-190">
+            <p>Lorem ipsum dolor sit amet consectetur. Sit tincidunt neque diam enim etiam sapien sapien elementum
+                lobortis. Purus diam adipiscing mattis malesuada pellentesque eget non. Tortor ultrices turpis diam
+                pellentesque pharetra tristique. Odio non lorem cursus ultricies.</p>
+        </div>
+        <button
+            class="border border-primary bg-primary text-white px-7 py-2 mt-5 rounded-full hover:bg-primary-hover cursor-pointer transition">Get
+            Started</button>
+
+    </div>
+
+    <!-- Hijau-Hijau -->
+    <div class="bg-primary h-120 md:h-100 grid grid-cols-1 md:grid-cols-2 ">
+        <!-- Kolom 1 -->
+        <div class="m-5 md:ml-40 flex flex-col justify-center text-secondary">
+            <div class="bg-primary text-white px-4 py-2 rounded-full border w-50 mb-5 hover:bg-primary-hover md:mb-5">About</div>
+            <p class="font-jakarta text-5xl">One Solution to All Your Trash Problems</p>
+        </div>
+        <!-- Kolom 2 -->
+        <div class="m-5 md:ml-40 flex flex-col justify-center text-secondary">
+            <p class="w-90">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eaque voluptas, sapiente non assumenda perspiciatis excepturi, iste maxime consequatur reprehenderit minima est odio numquam, corrupti praesentium quam veritatis. Voluptatem, tempora!</p>
+        </div>
+    </div>
+
+
+    <!-- FITUR SECTION -->
+    <div class="judul flex flex-col mt-8 items-center m-auto ">
+        <div class="w-auto bg-secondary text-primary px-4 py-2 rounded-full border  mb-5 hover:bg-secondary-hover md:mb-2">Features</div>
+            <h1 class="text-green-700 text-4xl font-semibold">Fitur Dari Produk Kita</h1>
+    </div>
+    <div class="max-w-4xl w-full m-auto my-10 px-4 sm:px-6 lg:px-0">
+        
+        <!-- Header -->
+        <div class="bg-bg-primary border border-stroke-primary rounded-lg p-6 flex flex-col justify-center gap-2">
+            <div class="bg-primary text-2xl text-white p-3 rounded-lg w-min">
+                📋
+            </div>
+            <h1 class="text-green-700 text-xl font-semibold">Penjadwalan Penjemputan Sampah</h1>
+            <p class="text-gray-600 text-sm">Dari hasil penukaran sampah, pengguna akan mendapatkan coin yang nantinya dapat ditukarkan dengan barang yang berguna bagi pengguna.</p>
+        </div>
+
+        <!-- Grid Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <!-- Chat antar Pengguna & Pengelola -->
+            <div class="bg-white border border-gray-300 p-4 rounded-lg flex items-start gap-4">
+                <div class="bg-bg-primary text-2xl text-green-700 p-3 rounded-lg">👥</div>
+                <div>
+                    <h2 class="text-lg text-green-700 font-semibold">Chat antar Pengguna & Pengelola</h2>
+                    
+                </div>
+            </div>
+
+            <!-- Reward berupa coin -->
+            <div class="bg-white border border-gray-300 p-4 rounded-lg flex items-start gap-4">
+                <div class="bg-bg-primary text-2xl text-green-700 p-3 rounded-lg">💰</div>
+                <div>
+                    <h2 class="text-lg text-green-700 font-semibold">Reward berupa coin yang dapat ditukar</h2>
+                    <p class="text-gray-600 text-sm">Dari hasil penukaran sampah, pengguna akan mendapatkan coin yang nantinya dapat ditukarkan dengan barang yang berguna bagi pengguna.</p>
+                </div>
+            </div>
+
+            <!-- Video tutorial -->
+            <div class="bg-white border border-gray-300 p-4 rounded-lg flex items-start gap-4 md:col-span-1">
+                <div class="bg-bg-primary text-2xl text-green-700 p-3 rounded-lg">🎥</div>
+                <div>
+                    <h2 class="text-lg text-green-700 font-semibold">Video tutorial pengelolaan & daur ulang</h2>
+                    <p class="text-gray-600 text-sm">Video ini dapat dimanfaatkan pengguna untuk membuat sebuah produk daur ulang yang nantinya dapat dijual dalam aplikasi kami.</p>
+                </div>
+            </div>
+
+            <!-- Penjualan produk daur ulang -->
+            <div class="bg-white border border-gray-300 p-4 rounded-lg flex items-start gap-4 md:col-span-1">
+                <div class="bg-bg-primary text-2xl text-green-700 p-3 rounded-lg">🛒</div>
+                <div>
+                    <h2 class="text-lg  text-green-700 font-semibold">Penjualan produk daur ulang oleh pengguna</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AKHIR FITUR -->
+
+    <!-- MANFAAT SECTION -->
+    <div class="judul flex flex-col mt-8 items-center m-auto ">
+        <div class="w-auto sm:w-120 bg-secondary text-primary px-4 py-2 rounded-full border  mb-5 hover:bg-secondary-hover md:mb-2">Manfaat</div>
+            <h1 class="text-green-700 text-center text-4xl font-semibold">Terus Apasih Manfaat dari GREENwise?</h1>
+            <p class="text-gray-500 mt-3 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, quisquam.</p>
+    </div>
+
+    <div class="max-w-6xl w-full m-auto my-10">
+
+        <!-- Grid Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+            <!-- Chat antar Pengguna & Pengelola -->
+            <div class="bg-white  p-7 rounded-lg shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.10)]">
+                <div class="bg-bg-primary text-2xl text-green-700 p-3 w-min rounded-lg mb-3">👥</div>
+                <div>
+                    <h2 class="text-lg text-green-700 font-semibold">Manfaat 1</h2>
+                    <p class="text-gray-600 text-sm">Dari hasil penukaran sampah, pengguna akan mendapatkan coin yang nantinya dapat ditukarkan dengan barang yang berguna bagi pengguna.</p>
+                </div>
+            </div>
+
+            <!-- Reward berupa coin -->
+            <div class="bg-white  p-7 rounded-lg shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.10)]">
+                <div class="bg-bg-primary text-2xl text-green-700 p-3 w-min rounded-lg mb-3">👥</div>
+                <div>
+                    <h2 class="text-lg text-green-700 font-semibold">Manfaat 1</h2>
+                    <p class="text-gray-600 text-sm">Dari hasil penukaran sampah, pengguna akan mendapatkan coin yang nantinya dapat ditukarkan dengan barang yang berguna bagi pengguna.</p>
+                </div>
+            </div>
+
+            <!-- Video tutorial -->
+            <div class="bg-white  p-7 rounded-lg shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.10)]">
+                <div class="bg-bg-primary text-2xl text-green-700 p-3 w-min rounded-lg mb-3">👥</div>
+                <div>
+                    <h2 class="text-lg text-green-700 font-semibold">Manfaat 1</h2>
+                    <p class="text-gray-600 text-sm">Dari hasil penukaran sampah, pengguna akan mendapatkan coin yang nantinya dapat ditukarkan dengan barang yang berguna bagi pengguna.</p>
+                </div>
+            </div>
+
+            <!-- Penjualan produk daur ulang -->
+            <div class="bg-white  p-7 rounded-lg shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.10)]">
+                <div class="bg-bg-primary text-2xl text-green-700 p-3 w-min rounded-lg mb-3">👥</div>
+                <div>
+                    <h2 class="text-lg text-green-700 font-semibold">Manfaat 1</h2>
+                    <p class="text-gray-600 text-sm">Dari hasil penukaran sampah, pengguna akan mendapatkan coin yang nantinya dapat ditukarkan dengan barang yang berguna bagi pengguna.</p>
+                </div>
+            </div>
+
+            <div class="bg-white  p-7 rounded-lg shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.10)]">
+                <div class="bg-bg-primary text-2xl text-green-700 p-3 w-min rounded-lg mb-3">👥</div>
+                <div>
+                    <h2 class="text-lg text-green-700 font-semibold">Manfaat 1</h2>
+                    <p class="text-gray-600 text-sm">Dari hasil penukaran sampah, pengguna akan mendapatkan coin yang nantinya dapat ditukarkan dengan barang yang berguna bagi pengguna.</p>
+                </div>
+            </div>
+
+            <div class="bg-white  p-7 rounded-lg shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.10)]">
+                <div class="bg-bg-primary text-2xl text-green-700 p-3 w-min rounded-lg mb-3">👥</div>
+                <div>
+                    <h2 class="text-lg text-green-700 font-semibold">Manfaat 1</h2>
+                    <p class="text-gray-600 text-sm">Dari hasil penukaran sampah, pengguna akan mendapatkan coin yang nantinya dapat ditukarkan dengan barang yang berguna bagi pengguna.</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <!-- AKHIR MANFAAT -->
+
+    <script src="script.js">
+        console.log(tailwind.config);
+    </script>
+</body>
+
+</html>
