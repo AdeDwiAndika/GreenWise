@@ -47,10 +47,10 @@
         <!-- Navbar -->
         <nav class="hidden lg:flex space-x-5 absolute left-1/2 -translate-x-1/2">
             <a href="#" class="text-third hover:text-primary transition">Beranda</a>
-            <a href="#" class="text-third hover:text-primary transition">Tentang kami</a>
-            <a href="#" class="text-third hover:text-primary transition">Fitur</a>
-            <a href="#" class="text-third hover:text-primary transition">Manfaat</a>
-            <a href="#" class="text-third hover:text-primary transition">FAQ</a>
+            <a href="#tentangkami" class="text-third hover:text-primary transition">Tentang kami</a>
+            <a href="#fitur" class="text-third hover:text-primary transition">Fitur</a>
+            <a href="#manfaat" class="text-third hover:text-primary transition">Manfaat</a>
+            <a href="#faq" class="text-third hover:text-primary transition">FAQ</a>
         </nav>
 
         <!-- Navbar Menu Mobile-->
@@ -79,17 +79,17 @@
     </header>
 
     <!-- Navbar Mobile -->
-    <div class="hidden md:hidden bg-white w-full py-4 px-6 shadow-md absolute z-10 left-0 right-0" id="mobileMenu">
+    <div class="hidden fixed left-0 top-0 z-100 md:hidden bg-white w-full py-4 px-6 shadow-md absolute z-10 left-0 right-0" id="mobileMenu">
         <div class="flex items-center text-xl justify-center">
             <span class="text-primary">.Bank</span>
             <span class="text-third">Sampah</span>
         </div>
         <nav class="flex flex-col space-y-4 pt-6">
             <a href="#" class="text-third hover:text-primary transition">Beranda</a>
-            <a href="#" class="text-third hover:text-primary transition">Tentang Kami</a>
-            <a href="#" class="text-third hover:text-primary transition">Fitur</a>
-            <a href="#" class="text-third hover:text-primary transition">Manfaat</a>
-            <a href="#" class="text-third hover:text-primary transition">FAQ</a>
+            <a href="#tentangkami" class="text-third hover:text-primary transition">Tentang Kami</a>
+            <a href="#fitur" class="text-third hover:text-primary transition">Fitur</a>
+            <a href="#manfaat" class="text-third hover:text-primary transition">Manfaat</a>
+            <a href="#faq" class="text-third hover:text-primary transition">FAQ</a>
         </nav>
         <div class="flex space-x-2 pt-6">
             <a href="login.html">
@@ -122,7 +122,7 @@
     </div>
 
     <!-- Hijau-Hijau -->
-    <div class="bg-primary h-130 md:h-100 grid grid-cols-1 md:grid-cols-2 ">
+    <div id="tentangkami" class="bg-primary h-min md:h-100 grid grid-cols-1 md:grid-cols-2 ">
         <!-- Kolom 1 -->
         <div class="m-5 md:ml-40 flex flex-col justify-center text-secondary">
             <div class="bg-primary text-white px-4 py-2 rounded-full border w-50 mb-5 hover:bg-primary-hover md:mb-5">About</div>
@@ -130,13 +130,13 @@
         </div>
         <!-- Kolom 2 -->
         <div class="m-5 md:ml-40 flex flex-col justify-center text-secondary">
-            <p class="w-82">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis eaque voluptas, sapiente non assumenda perspiciatis excepturi, iste maxime consequatur reprehenderit minima est odio numquam, corrupti praesentium quam veritatis. Voluptatem, tempora!</p>
+            <p class="w-82 sm:w-115">GREENWISE merupakan platform digital berbasis teknologi yang menghubungkan pengguna dengan pengelola sampah untuk mendaur ulang limbah menjadi produk bernilai jual. Dengan meningkatnya volume sampah dan terbatasnya pengelolaan yang efektif, GREENWISE hadir sebagai solusi inovatif yang memanfaatkan teknologi digital untuk mendukung sistem daur ulang berkelanjutan.</p>
         </div>
     </div>
 
 
     <!-- FITUR SECTION -->
-    <div class="judul flex flex-col mt-8 items-center m-auto ">
+    <div id="fitur" class="judul flex flex-col mt-8 items-center m-auto ">
         <div class="w-auto bg-secondary text-primary px-4 py-2 rounded-full border  mb-5 hover:bg-secondary-hover md:mb-2">Features</div>
             <h1 class="text-green-700 text-4xl font-semibold">Fitur Dari Produk Kita</h1>
     </div>
@@ -192,7 +192,7 @@
     <!-- AKHIR FITUR -->
 
     <!-- MANFAAT SECTION -->
-    <div class="judul flex flex-col mt-8 items-center m-auto w-85 sm:w-auto">
+    <div id="manfaat" class="judul flex flex-col mt-8 items-center m-auto w-85 sm:w-auto">
         <div class="w-auto bg-secondary text-primary px-4 py-2 rounded-full border  mb-5 hover:bg-secondary-hover md:mb-2">Manfaat</div>
             <h1 class="text-green-700 text-center text-3xl sm:text-4xl font-semibold">Terus Apasih Manfaat dari GREENwise?</h1>
             <p class="text-gray-500 mt-3 text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, quisquam.</p>
@@ -259,7 +259,7 @@
     <!-- AKHIR MANFAAT -->
 
     <!-- AWAL FAQ -->
-    <div class="bg-primary sm:py-10 py-3 sm:px-50 px-3 flex sm:flex-row flex-col gap-4 justify-between">
+    <div id="faq" class="bg-primary sm:py-10 py-3 sm:px-50 px-3 flex sm:flex-row flex-col gap-4 justify-between">
         
             <div class="judul flex flex-col mt-8 items-start  w-80 sm:w-auto">
                 <div class="w-auto bg-secondary text-primary px-4 py-2 rounded-full border  mb-5 hover:bg-secondary-hover md:mb-2">FAQ</div>
@@ -278,7 +278,7 @@
                         <span class="accordion-icon">+</span>
                     </button>
                     <div class="accordion-content hidden p-4 text-gray-600">
-                        Tailwind CSS is a utility-first CSS framework that allows developers to build modern websites quickly.
+                        GREENWISE adalah platform digital yang menghubungkan pengguna dengan pengelola sampah untuk mendaur ulang limbah menjadi produk bernilai jual. Dengan teknologi digital, GREENWISE menawarkan solusi inovatif untuk mendukung sistem daur ulang berkelanjutan.
                     </div>
                 </div>
         
@@ -289,7 +289,7 @@
                         <span class="accordion-icon">+</span>
                     </button>
                     <div class="accordion-content hidden p-4 text-gray-600">
-                        Tailwind is highly customizable and makes styling components faster with pre-built utility classes.
+                        Pilih GREENWISE untuk solusi cerdas daur ulang—mudah, bernilai, dan ramah lingkungan!
                     </div>
                 </div>
         
@@ -300,7 +300,7 @@
                         <span class="accordion-icon">+</span>
                     </button>
                     <div class="accordion-content hidden p-4 text-gray-600">
-                        Tailwind is more flexible than Bootstrap, allowing developers to customize styles without overriding pre-built classes.
+                        Tentunya pasti anda mendapatkan keuntungan!. Anda akan mendapatkan keuntungan dari hasil penukaran sampah dan hasil penjualan produk hasil daur ulang anda.
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dashboard | GREENwise</title>
     <link rel="icon" href="../Images/icon.png" />
     <link
       rel="stylesheet"
@@ -62,8 +62,12 @@
 
       <!-- Notification -->
       <div class="flex space-x-2 md:space-x-4">
+        <div class="flex space-x-1">
+          <p class="font-jakarta text-">225</p>
+          <i class="fas fa-coins text-yellow-500 text-lg md:text-xl"></i>
+        </div>
         <button
-          class="text-third p-x-2 hover:text-primary-hover transition"
+          class="text-third hover:text-primary-hover transition"
           title="Account"
         >
           <i class="fas fa-user text-lg md:text-xl"></i>
@@ -107,7 +111,7 @@
           <span class="font-jakarta">Features</span>
         </a>
         <a
-          href="#"
+          href="#tracking"
           class="flex items-center space-x-2 p-2 hover:bg-primary-hover transition rounded-md w-full"
         >
           <i class="fas fa-location-arrow"></i>
@@ -153,7 +157,7 @@
           <span class="font-jakarta">Features</span>
         </a>
         <a
-          href="#"
+          href="#tracking"
           class="flex items-center space-x-2 p-2 hover:bg-primary-hover transition rounded-md w-full"
         >
           <i class="fas fa-location-arrow"></i>
@@ -240,6 +244,23 @@
             </tr>
           </tbody>
         </table>
+      </div>
+
+      <!-- TRACKING -->
+      <h1 id="tracking" class="text-3xl font-semibold text-third mt-10">
+        Tracking
+      </h1>
+      <div class="map w-auto bg-white mt-6 shadow-md rounded-md md:p-6">
+        <iframe
+          class="w-auto sm:w-full"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6919770919044!2d112.79118077502362!3d-7.275847092731256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa10ea2ae883%3A0xbe22c55d60ef09c7!2sPoliteknik%20Elektronika%20Negeri%20Surabaya!5e0!3m2!1sid!2sid!4v1742225747954!5m2!1sid!2sid"
+          width="auto"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
 
