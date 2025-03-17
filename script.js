@@ -57,3 +57,29 @@ document.querySelectorAll(".accordion-header").forEach((button) => {
     }
   });
 });
+
+const ctx = document.getElementById("weeklyStats").getContext("2d");
+new Chart(ctx, {
+  type: "line",
+  data: {
+    labels: ["Sen", "Sel", "Rab", "Kam", "Jum", "Sab", "Min"],
+    datasets: [
+      {
+        label: "Sampah Dikumpulkan (Kg)",
+        data: [5, 7.5, 10, 9, 8, 12, 14],
+        borderColor: "#3A9F1D",
+        borderWidth: 5,
+        fill: false,
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: true,
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+  },
+});
