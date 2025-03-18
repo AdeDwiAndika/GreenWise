@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <style type="text/tailwindcss">
       @theme {
         --color-primary: #3a9f1d;
@@ -23,6 +27,11 @@
         --color-secondary: #ffffff;
         --color-secondary-hover: #f7f7f7;
         --color-third: #000000;
+        --color-stroke-primary: #b8dcad;
+        --color-bg-primary: #f0f8ed;
+      }
+      * {
+        font-family: "dm sans", sans-serif;
       }
     </style>
     <script>
@@ -41,7 +50,10 @@
     </script>
   </head>
 
-  <body class="flex flex-col h-full overflow-x-hidden">
+  <body
+    class="flex flex-col h-full overflow-x-hidden"
+    style="background-color: #f3f5f7"
+  >
     <header
       class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-4 py-4 bg-white shadow-md"
     >
@@ -185,30 +197,86 @@
       <!-- Beranda -->
       <!-- Card Statistik -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6" id="beranda">
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h2 class="text-lg font-semibold">Total Sampah Terkumpul</h2>
-          <p class="text-2xl font-bold text-green-600">100 Kg</p>
+        <div
+          class="bg-white p-6 rounded-[20px] shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.05)]"
+        >
+          <div class="flex justify-between items-center mb-4">
+            <p>Total Sampah Terkumpul</p>
+            <div
+              class="p-3 bg-bg-primary flex items-center justify-center rounded-full w-12 h-12"
+            >
+              <i class="fa-solid fa-arrow-trend-up text-primary"></i>
+            </div>
+          </div>
+
+          <p class="mb-3 text-5xl font-semibold text-green-600">100 Kg</p>
+          <p class="text-sm">
+            <span class="px-3 py-1 bg-bg-primary rounded-full">2.3%</span>Lebih
+            banyak
+          </p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h2 class="text-lg font-semibold">Pengguna Aktif</h2>
-          <p class="text-2xl font-bold text-green-600">200+</p>
+        <div
+          class="bg-white p-6 rounded-[20px] shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.05)]"
+        >
+          <div class="flex justify-between items-center mb-4">
+            <p>Pengguna Aktif</p>
+            <div
+              class="p-3 bg-bg-primary flex items-center justify-center rounded-full w-12 h-12"
+            >
+              <i class="fa-solid fa-arrow-trend-up text-primary"></i>
+            </div>
+          </div>
+
+          <p class="mb-3 text-5xl font-semibold text-green-600">120+</p>
+          <p class="text-sm">
+            <span class="px-3 py-1 bg-bg-primary rounded-full">1.2%</span>Lebih
+            banyak dari kemarin
+          </p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h2 class="text-lg font-semibold">Pendaur Ulang</h2>
-          <p class="text-2xl font-bold text-green-600">50+</p>
+        <div
+          class="bg-white p-6 rounded-[20px] shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.05)]"
+        >
+          <div class="flex justify-between items-center mb-4">
+            <p>Pendaur Ulang</p>
+            <div
+              class="p-3 bg-bg-primary flex items-center justify-center rounded-full w-12 h-12"
+            >
+              <i class="fa-solid fa-arrow-trend-up text-primary"></i>
+            </div>
+          </div>
+
+          <p class="mb-3 text-5xl font-semibold text-green-600">50+</p>
+          <p class="text-sm">
+            <span class="px-3 py-1 bg-bg-primary rounded-full">5.2%</span>Lebih
+            banyak
+          </p>
         </div>
       </div>
 
       <!-- Statistik Mingguan -->
-      <div class="bg-white p-6 mt-6 shadow-md rounded-md">
-        <h2 class="text-lg font-semibold mb-4">Statistik Mingguan</h2>
+      <div
+        class="bg-white p-6 mt-6 shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.05)] rounded-[20px]"
+      >
+        <div class="flex flex-col sm:flex-row items-start justify-between">
+          <h2 class="text-lg font-semibold mb-4">Statistik Mingguan</h2>
+          <div
+            class="mb-3 flex justify-center items-center gap-3 rounded-full border border-secondary-hover px-5 py-1"
+          >
+            <p>Pilih Tahun</p>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+
         <canvas id="weeklyStats"></canvas>
       </div>
 
       <!-- History -->
       <h1 class="text-3xl font-semibold text-third mt-10">History</h1>
 
-      <div class="bg-white mt-6 shadow-md rounded-md md:p-6" id="history">
+      <div
+        class="bg-white mt-6 shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.05)] rounded-md md:p-6"
+        id="history"
+      >
         <h2 class="text-lg font-semibold mb-4 p-2">Riwayat Aktivitas</h2>
         <table class="w-full border-collapse border border-gray-300">
           <thead>
@@ -262,7 +330,7 @@
             class="bg-white h-min p-7 rounded-lg shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.10)]"
           >
             <div
-              class="bg-bg-primary text-2xl text-green-700 p-3 h-70 rounded-lg mb-3 overflow-hidden"
+              class="bg-bg-primary text-2xl text-green-700 h-70 rounded-lg mb-3 overflow-hidden"
             >
               <img src="img/produk1.jpg" class="w-full object-cover" alt="" />
             </div>
@@ -282,7 +350,7 @@
             class="bg-white h-min p-7 rounded-lg shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.10)]"
           >
             <div
-              class="bg-bg-primary text-2xl text-green-700 p-3 h-70 rounded-lg mb-3 overflow-hidden"
+              class="bg-bg-primary text-2xl text-green-700 h-70 rounded-lg mb-3 overflow-hidden"
             >
               <img src="img/produk2.jpg" class="w-full object-cover" alt="" />
             </div>
@@ -301,7 +369,7 @@
             class="bg-white h-min p-7 rounded-lg shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.10)]"
           >
             <div
-              class="bg-bg-primary text-2xl text-green-700 p-3 h-70 rounded-lg mb-3 overflow-hidden"
+              class="bg-bg-primary text-2xl text-green-700 h-70 rounded-lg mb-3 overflow-hidden"
             >
               <img src="img/produk3.jpg" class="w-full object-cover" alt="" />
             </div>
@@ -324,7 +392,9 @@
       <h1 id="tracking" class="text-3xl font-semibold text-third mt-10">
         Tracking
       </h1>
-      <div class="map w-auto bg-white mt-6 shadow-md rounded-md md:p-6">
+      <div
+        class="map w-auto bg-white mt-6 shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.05)] rounded-md md:p-6"
+      >
         <iframe
           class="w-auto sm:w-full"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6919770919044!2d112.79118077502362!3d-7.275847092731256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fa10ea2ae883%3A0xbe22c55d60ef09c7!2sPoliteknik%20Elektronika%20Negeri%20Surabaya!5e0!3m2!1sid!2sid!4v1742225747954!5m2!1sid!2sid"
