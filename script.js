@@ -59,6 +59,11 @@ document.querySelectorAll(".accordion-header").forEach((button) => {
 });
 
 const ctx = document.getElementById("weeklyStats").getContext("2d");
+
+const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+gradient.addColorStop(0, "rgba(0, 128, 0, 0.5)"); // Hijau atas
+gradient.addColorStop(1, "rgba(0, 128, 0, 0)");
+
 new Chart(ctx, {
   type: "line",
   data: {
@@ -69,7 +74,11 @@ new Chart(ctx, {
         data: [5, 7.5, 10, 9, 8, 12, 14],
         borderColor: "#3A9F1D",
         borderWidth: 5,
-        fill: false,
+        pointRadius: 3,
+        pointHoverRadius: 6,
+        fill: true,
+        backgroundColor: gradient,
+        tension: 0.5,
       },
     ],
   },

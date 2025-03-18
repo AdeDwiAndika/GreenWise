@@ -254,27 +254,74 @@
       </div>
 
       <!-- Statistik Mingguan -->
-      <div
-        class="bg-white p-6 mt-6 shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.05)] rounded-[20px]"
-      >
-        <div class="flex flex-col sm:flex-row items-start justify-between">
-          <h2 class="text-lg font-semibold mb-4">Statistik Mingguan</h2>
-          <div
-            class="mb-3 flex justify-center items-center gap-3 rounded-full border border-secondary-hover px-5 py-1"
-          >
-            <p>Pilih Tahun</p>
-            <i class="fa-solid fa-chevron-down"></i>
+      <div class="flex flex-col sm:flex-row justify-between w-full mt-6 gap-6">
+        <div
+          class="bg-white p-6 shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.05)] rounded-[20px] w-full"
+        >
+          <div class="flex flex-col sm:flex-row items-start justify-between">
+            <div class="flex flex-col mb-4">
+              <h2 class="text-2xl font-semibold">Statistik</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam, id.
+              </p>
+            </div>
+            <div
+              class="mb-3 flex justify-center items-center gap-3 rounded-full border border-secondary-hover px-5 py-1"
+            >
+              <p>Pilih Tahun</p>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+          </div>
+
+          <canvas id="weeklyStats"></canvas>
+        </div>
+        <div
+          class="bg-white p-6 shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.05)] rounded-[20px] w-120"
+        >
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center gap-3">
+              <div
+                class="p-3 bg-bg-primary rounded-[10px] w-12 h-12 flex justify-center items-center"
+              >
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <div class="">
+                <h2 class="font-bold">Jadwal Pengambilan Sampah</h2>
+                <p class="text-sm">18 Maret jam 12.00</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div
+                class="p-3 bg-bg-primary rounded-[10px] w-12 h-12 flex justify-center items-center"
+              >
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <div class="">
+                <h2 class="font-bold">Pengambilan Sampah</h2>
+                <p class="text-sm">21 Maret jam 11.30</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div
+                class="p-3 bg-bg-primary rounded-[10px] w-12 h-12 flex justify-center items-center"
+              >
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <div class="">
+                <h2 class="font-bold">Pengambilan Sampah - Plastik</h2>
+                <p class="text-sm">23 Maret jam 09.00</p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <canvas id="weeklyStats"></canvas>
       </div>
 
       <!-- History -->
       <h1 class="text-3xl font-semibold text-third mt-10">History</h1>
 
       <div
-        class="bg-white mt-6 shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.05)] rounded-md md:p-6"
+        class="bg-white mt-6 shadow-[0px_10px_77px_-19px_rgba(0,0,0,0.05)] rounded-[20px] md:p-6"
         id="history"
       >
         <h2 class="text-lg font-semibold mb-4 p-2">Riwayat Aktivitas</h2>
