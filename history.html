@@ -74,12 +74,14 @@
 
       <!-- Notification -->
       <div class="flex space-x-2 md:space-x-4">
-        <button
-          class="text-third hover:text-primary-hover transition"
-          title="Account"
-        >
-          <i class="fas fa-user text-lg md:text-xl"></i>
-        </button>
+        <a href="account.html">
+          <button
+            class="text-third hover:text-primary-hover transition"
+            title="Account"
+          >
+            <i class="fas fa-user text-lg md:text-xl"></i>
+          </button>
+        </a>
         <button
           class="text-third hover:text-primary-hover transition"
           title="Notification"
@@ -119,7 +121,7 @@
           <span class="font-jakarta">Market</span>
         </a>
         <a
-          href="#tracking"
+          href="tracking.html"
           class="flex items-center space-x-2 p-2 hover:bg-primary-hover transition rounded-md w-full"
         >
           <i class="fas fa-location-arrow"></i>
@@ -152,13 +154,12 @@
         </a>
         <a
           href="history.html"
-          class="flex items-center space-x-2 p-2 hover:bg-primary-hover transition rounded-md w-full"
+          class="flex items-center space-x-2 p-2 bg-secondary transition rounded-md w-full"
         >
-          <i class="fas fa-history"></i>
-          <span class="font-jakarta">History</span>
+          <i class="fas fa-history text-primary"></i>
+          <span class="font-jakarta text-primary">History</span>
         </a>
         <a
-
           href="market.html"
           class="flex items-center space-x-2 p-2 hover:bg-primary-hover transition rounded-md w-full"
         >
@@ -166,7 +167,7 @@
           <span class="font-jakarta">Market</span>
         </a>
         <a
-          href="#tracking"
+          href="tracking.html"
           class="flex items-center space-x-2 p-2 hover:bg-primary-hover transition rounded-md w-full"
         >
           <i class="fas fa-location-arrow"></i>
@@ -185,8 +186,17 @@
     <!-- Main content -->
     <!-- History Page -->
     <div class="ml-0 mt-20 flex-1 p-8 md:ml-50" id="history">
-      <div class="flex justify-between items-center mb-6 overflow-x-auto">
-        <h1 class="text-2xl font-jakarta font-bold">Payment History</h1>
+      <div
+        class="flex justify-between items-center mb-6 overflow-x-auto md:overflow-hidden"
+      >
+        <div class="">
+          <p class="text-third font-jakarta text-lg mt-2">
+            Selamat datang di platform daur ulang
+            <span class="text-primary">.GREEN</span
+            ><span class="text-third">wise</span>
+          </p>
+          <h1 class="text-3xl font-semibold text-third">History</h1>
+        </div>
         <div
           class="flex justify-center items-center gap-3 rounded-full border border-gray-300 px-5 py-1"
         >
